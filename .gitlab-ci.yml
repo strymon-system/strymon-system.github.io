@@ -1,0 +1,12 @@
+image: ruby:2.4
+
+variables:
+  JEKYLL_ENV: production
+
+pages:
+  script:
+  - bundle install
+  - bundle exec jekyll build
+  artifacts:
+    paths:
+    - _site
