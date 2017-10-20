@@ -1,35 +1,43 @@
 # SITE CONFIGURATION
-baseurl: "/type-theme"
-url: "https://rohanchandra.github.io/"
+baseurl: ""
+url: "https://strymon-system.github.io/"
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: Type Theme
-  avatar: assets/img/avatar.png
-  favicon: assets/favicon.ico
+  title: Strymon
+  avatar:
+  favicon:
   gravatar: # Email MD5 hash
-  description: "A website with blog posts and pages" # used by search engines
+  description: "Strymon" # used by search engines
 
   # Header and footer text
   header_text: >
-     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+     <p><strong>Strymon</strong> is a platform for online modelling of enterprise datacenter behavior</p>
 
-     <p>Remove all header text in <code>_config.yml</code> to disable this feature.</p>
+     <p><a class="button" href="/docs/getting-started">Get Started</a></p>
   header_text_feature_image:
+
+  header_links:
+    - title: Documentation
+      url: /docs
+    - title: Research
+      url: http://strymon.systems.ethz.ch/
+
   footer_text: >
-   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
+   Copyright © 2017 <a href="https://www.systems.ethz.ch/">ETH Zürich</a> | Theme based on <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
+
 
   # Icons
   rss: false
-  email_address: # Full email address, e.g. "sam@example.com"
+  email_address:  # Full email address, e.g. "sam@example.com"
   behance:
   bitbucket:
   dribbble:
   facebook:
   flickr:
   gitlab:
-  github: "rohanchandra/type-theme"
+  github: "strymon-system"
   google_plus:
   instagram:
   linkedin:  # Full URL
@@ -39,14 +47,14 @@ theme_settings:
   stack_exchange:  # Full URL
   steam:
   tumblr:
-  twitter: "twitter"
+  twitter: "SystemsGroupETH"
   wordpress:
   youtube:
 
   # Scripts
   google_analytics: # Tracking ID, e.g. "UA-000000-01"
   disqus_shortname:
-  katex: true # Enable if using math markup
+  katex: false # Enable if using math markup
 
   # Localization strings
   str_follow_on: "Follow on"
@@ -81,3 +89,4 @@ theme: jekyll-theme-type
 exclude:
   - Gemfile
   - Gemfile.lock
+  - vendor

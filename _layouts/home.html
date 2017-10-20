@@ -10,6 +10,19 @@ layout: default
   </div>
   {% endif %}
 
+  <section class="home-content">
+    {{ content }}
+  </section>
+
+  {% if paginator.posts %}
+  <h3 class="news-header">
+    Latest news:
+    <a href="{{ "/feed.xml" | relative_url }}" title="{{ site.theme_settings.str_rss_follow }}">
+      <i class="fa fa-fw fa-rss"></i>
+    </a>
+  </h3>
+  {% endif %}
+
   <div class="posts">
     {% for post in paginator.posts %}
     <div class="post-teaser">

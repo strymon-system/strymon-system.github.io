@@ -2,3 +2,14 @@
 ---
 
 @import "type-theme";
+
+.call-out {
+  .button {
+    color: $header-desc-text-color;
+    border-color: $header-desc-text-color;
+    &:hover {
+      color: $header-desc-background-color;
+      background-color: $header-desc-text-color;
+    }
+  }
+}
