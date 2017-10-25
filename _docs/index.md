@@ -5,14 +5,5 @@ permalink: /docs/
 nav-index: 0
 ---
 
-## Short explanation of example applications
-
-TODO
-
-## Explanation or at least a glossary of the pub sub mechanism
-
-TODO
-
-## Getting Started
-
-TODO
+-  Getting Started
+- [How to contribute](how-to-contribute)
