@@ -1,7 +1,8 @@
 ---
 layout: docs
 title: How to contribute
-permalink: /docs/how-to-contribute
+nav-index: 3
+permalink: /_docs/how-to-contribute
 ---
 
 Strymon is currently developed and maintained by an open and friendly [team of researchers at ETH Zürich](http://strymon.systems.ethz.ch/about.html).
@@ -29,16 +30,15 @@ Strymon is written in [Rust](https://www.rust-lang.org/en-US/) and builds on top
 
 - Unix-like environment (we use Linux, Mac OS X)
 - git
-- Rust version ?
-- Other dependencies ?
+- Rust nightly (2017-08-31 or newer)
 
 **Clone the repository**
 
 Strymon’s source code is stored in a git repository which is mirrored to [Github](https://github.com/strymon-system/strymon-core). The common way to exchange code on Github is to fork a the repository into your personal Github account. For that, you need to have a Github account or create one for free. Forking a repository means that Github creates a copy of the forked repository for you. This is done by clicking on the fork button on the upper right of the repository website. Once you have a fork of Strymon's repository in your personal account, you can clone that repository to your local machine.
 
-`git clone https://github.com/<your-user-name>/strymon.git`
+`git clone https://github.com/<your-user-name>/strymon-core.git`
 
-The code is downloaded into a directory called strymon.
+The code is downloaded into a directory called strymon-core.
 
 **Make your changes locally**
 
@@ -61,12 +61,12 @@ To open a pull request, push our contribution back into your fork of the Strymon
 
 `git push origin myBranch`
 
-Go the website of your repository fork and use the "Create Pull Request" button to start creating a pull request. Make sure that the base fork is `strymon-project/strymon-core master` and the head fork selects the branch with your changes. Give the pull request a meaningful description and send it.
+Go the website of your repository fork and use the "Create Pull Request" button to start creating a pull request. Make sure that the base fork is `strymon-system/strymon-core master` and the head fork selects the branch with your changes. Give the pull request a meaningful description and send it.
 
 
 ### Sign-off procedure
 
-To keep track of contributions to Srtymon, we use a sign-off procedure similar to the Linux kernel:
+To keep track of contributions to Strymon, we use a sign-off procedure similar to the Linux kernel:
 
 The sign-off is a simple line at the end of the explanation for the patch, which certifies that you wrote it or otherwise have the right to pass it on as an open-source patch.  The rules are pretty simple: if you can certify the below:
 
