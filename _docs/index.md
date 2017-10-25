@@ -1,9 +1,8 @@
 ---
 layout: docs
-title: Documentation
+title: Overview
 permalink: /docs/
-redirect_from:
-  - /docs/getting-started
+nav-index: 0
 ---
 
 ## Short explanation of example applications

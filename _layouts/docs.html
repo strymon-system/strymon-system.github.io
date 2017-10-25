@@ -6,5 +6,15 @@ layout: default
     <h1 class="title">{{ page.title }}</h1>
     {% if page.subtitle %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
   </header>
+  <nav class="side-nav">
+    <ul>
+    {% assign docs = site.docs | sort: 'nav-index' %}
+    {% for doc in docs %}
+    <li {% if page.url == doc.url %}class="active"{% endif %}}>
+      <a href="{{ doc.url | relative_url }}">{{ doc.title }}</a>
+    </li>
+    {% endfor %}
+    <ul>
+  </nav>
   <section class="post-content">{{ content }}</section>
 </article>

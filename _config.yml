@@ -2,6 +2,11 @@
 baseurl: ""
 url: "https://strymon-system.github.io/"
 
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:name
+
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta

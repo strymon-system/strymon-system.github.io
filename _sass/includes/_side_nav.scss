@@ -1,0 +1,23 @@
+.side-nav ul {
+  list-style: none;
+}
+
+.side-nav li.active {
+  font-weight: bold;
+}
+
+@media (min-width: 1100px) {
+  .side-nav {
+    float: left;
+    width: 240px;
+  }
+
+  .side-nav + .post-content {
+    margin-left: 250px;
+  }
+
+  .side-nav + .post-content:after {
+    content: "";
+    clear: both;
+  }
+}
