@@ -5,7 +5,7 @@ nav-index: 2
 ---
 
 The Strymon source code ships with a simple dataflow which generates a
-small datacenter network topology and allows for the simulation of a switch
+small datacenter network topology and allows for the simulation of switch
 and link failures.
 
 The source code of the example can be found in the `apps` folder. It consists
