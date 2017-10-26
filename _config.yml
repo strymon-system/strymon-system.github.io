@@ -24,6 +24,8 @@ theme_settings:
   header_text_feature_image:
 
   header_links:
+    - title: Code
+      url: /download
     - title: Documentation
       url: /docs
     - title: Research
