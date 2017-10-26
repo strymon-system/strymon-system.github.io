@@ -15,3 +15,7 @@ cargo build --all --release
 ./bin/stop-strymon.sh
 ```  
 
+> Note: on macOS you may be presented with a prompt from the firewall, once
+> when starting the cluster and again when running the provided example.  This
+> is because the built-in firewall blocks incoming network connections and you
+> can safely proceed by selecting "Allow".
