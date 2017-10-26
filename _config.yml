@@ -1,6 +1,7 @@
 # SITE CONFIGURATION
 baseurl: ""
 url: "https://strymon-system.github.io/"
+future: false
 
 collections:
   docs:
