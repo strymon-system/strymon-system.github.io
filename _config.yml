@@ -6,9 +6,6 @@ collections:
   docs:
     output: true
     permalink: /:collection/:name
-  posts:
-    output: true
-    permalink: /:collection/:name
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
@@ -32,7 +29,7 @@ theme_settings:
     - title: Research
       url: http://strymon.systems.ethz.ch/
     - title: Blog
-      url: /posts
+      url: /blog
 
   footer_text: >
    Copyright © 2017 <a href="https://www.systems.ethz.ch/">ETH Zürich</a> | Theme based on <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
@@ -86,7 +83,7 @@ theme_settings:
 
 # PAGINATION
 paginate: 5
-paginate_path: "blog/page:num"
+paginate_path: "blog/page/:num"
 
 # BUILD SETTINGS
 markdown: kramdown
