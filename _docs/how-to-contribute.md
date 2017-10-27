@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: How to contribute
-nav-index: 3
+nav-index: 6
 permalink: /docs/how-to-contribute
 ---
 

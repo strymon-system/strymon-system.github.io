@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Project info
-nav-index: 5
+nav-index: 7
 ---
 
 - [Mailing list](mailto:strymon-users@lists.inf.ethz.ch)

@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Command-line interface
-nav-index: 1
+nav-index: 3
 ---
 
 Strymon provides a command-line interface to build and run Timely dataflow
