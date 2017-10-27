@@ -29,8 +29,8 @@ This step will take a while, as this command builds everything: The Strymon core
 run-time, the provided example programs, and essential dependencies such as
 [Timely and Differential Dataflow](https://github.com/frankmcsherry/timely-dataflow).
 
-> *Note*: The easiest way to install the nightly version of the Rustc compiler is
-> using [rustup.rs](https://rustup.rs/). You can assign a directory override
+> *Note*: The easiest way to install the nightly version of the Rust compiler
+> and Cargo is using [rustup.rs](https://rustup.rs/). You can assign a directory override
 > for the nightly version by running the following command
 > inside the `strymon-core` project folder:
 > ```terminal
