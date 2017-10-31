@@ -83,7 +83,7 @@ anymore:
 
 ```
 INFO:…: QueryId(0) | Disconnecting randomly chosen switch #149
-INFO:…: QueryId(1) | The are now 2 disconnected partitions in the graph!
+INFO:…: QueryId(1) | There are now 2 disconnected partitions in the graph!
 ```
 
 Note that the simulated fault is only temporary. After 10 seconds, the
