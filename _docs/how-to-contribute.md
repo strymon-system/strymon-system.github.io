@@ -29,8 +29,8 @@ Strymon is written in [Rust](https://www.rust-lang.org/en-US/) and builds on top
 **Make sure your setup meets the requirements for developing and building Strymon**
 
 - Unix-like environment (we use Linux, Mac OS X)
+- [Rust 1.21](https://www.rust-lang.org/) or newer
 - git
-- Rust nightly (2017-08-31 or newer)
 
 **Clone the repository**
 

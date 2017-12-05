@@ -165,6 +165,27 @@ The number of worker threads per executors (default: `1`) can set using the
 `--workers` option. The optional job name is given through the `--description`
 option.
 
+### `strymon terminate`
+
+    strymon-terminate
+    Send the termination signal to a running Strymon job
+
+    USAGE:
+        strymon terminate [OPTIONS] <JOB_ID>
+
+    FLAGS:
+        -h, --help       Prints help information
+        -V, --version    Prints version information
+
+    OPTIONS:
+        -c, --coordinator <ADDR>    Address of the coordinator
+
+    ARGS:
+        <JOB_ID>    Numeric job identifier
+
+Terminates all processes belonging to a running Strymon job. The job to terminate
+is identified by its numeric identifier which is assigned during `strymon submit`
+and can also be obtained through `strymon status`.
 
 ## Cluster management scripts
 
@@ -197,7 +218,3 @@ coordinator and executor instances used for starting the cluster.
 > **Note**: Support for launching the coordinator or executors on remote machines
 > with these scripts is currently still experimental. The script does currently
 > not support starting multiple executors on the same machine.
-
-> **Note**: There is a known bug in which submitted jobs keep running even after
-> the cluster has been stopped. To stop the submitted jobs manually, terminate
-> them using `pkill -f timely_query`.
