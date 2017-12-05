@@ -80,9 +80,3 @@ execute the following command:
 ```terminal
 $ ./bin/stop-strymon.sh
 ```
-
-> *Note*: Stopping the executor will not terminate any runnig jobs. This will
-> change in the future. For now you can terminate them manually as follows:
-> ```terminal
-> $ pkill -f timely_query
-> ```
