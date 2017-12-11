@@ -4,7 +4,7 @@ title: Run-Time Architecture
 nav-index: 4
 ---
 
-Strymon is a distributed system that builds on top of the [Rust](https://www.rust-lang.org/en-US/) prototype of [Timely Dataflow](https://github.com/frankmcsherry/timely-dataflow). Timely was first introduced in the [Naiad system](dl.acm.org/citation.cfm?id=2522738) and was an attractive option for us due to the following reasons:
+Strymon is a distributed system that builds on top of the [Rust](https://www.rust-lang.org/en-US/) prototype of [Timely Dataflow](https://github.com/frankmcsherry/timely-dataflow). Timely was first introduced in the [Naiad system](https://dl.acm.org/citation.cfm?id=2522738) and was an attractive option for us due to the following reasons:
 
   1. Timely adopts a pure event-driven and push-based execution model that is ideal for our setting where individual events coming from the datacenter trigger new Strymon computations in an asynchronous fashion.
   2. Unlike other streaming platforms, Timely’s model natively supports arbitrary iterative computations, which lie in the heart of simulating several complex datacenter operations, such as network routing.
