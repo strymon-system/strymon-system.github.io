@@ -1,0 +1,3 @@
+[submodule "submodules/snailtrail"]
+	path = submodules/snailtrail
+	url = https://github.com/strymon-system/snailtrail.git

@@ -6,7 +6,7 @@ future: false
 collections:
   docs:
     output: true
-    permalink: /:collection/:name
+    permalink: /:collection/:path
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
@@ -102,3 +102,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - submodules
