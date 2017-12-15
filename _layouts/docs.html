@@ -7,14 +7,44 @@ layout: default
     {% if page.subtitle %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
   </header>
   <nav class="side-nav">
+    {% comment %}
+    The following code creates the side navigation for the documentation pages.
+
+    Documents with unexisting or misspelled categories, or no category at all,
+    will be printed first by the first for loop below, i.e. under the title
+    "Documentation".
+
+    Any pages with valid pre-defined categories (i.e. categories defined in
+    `docs_categories` collection the `_config.yml`) will be emitted in the
+    according category in the second for loop. The order of categories is the
+    same as the order defined in the `_config.yml`.
+
+    Note: The `nav-index` of each document defines the order of the document
+    within its category. Documents without any `nav-index` will be put at the
+    bottom.
+    {% endcomment %}
+    <h4>Documentation</h4>
     <ul>
-    {% assign docs = site.docs | sort: 'nav-index' %}
+    {% assign docs = site.docs | sort: 'nav-index', 'last' %}
     {% for doc in docs %}
-    <li {% if page.url == doc.url %}class="active"{% endif %}}>
-      <a href="{{ doc.url | relative_url }}">{{ doc.title }}</a>
-    </li>
+      {% unless site.docs_categories contains doc.category %}
+        <li {% if page.url == doc.url %} class="active" {% endif %} >
+          <a href="{{ doc.url | relative_url }}">{{ doc.title }}</a>
+        </li>
+      {% endunless %}
     {% endfor %}
-    <ul>
+    </ul>
+    {% for category in site.docs_categories %}
+      <h4>{{ category }}</h4>
+      <ul>
+      {% assign docs = site.docs | where: 'category',category | sort: 'nav-index', 'last' %}
+      {% for doc in docs %}
+        <li {% if page.url == doc.url %} class="active" {% endif %} >
+          <a href="{{ doc.url | relative_url }}">{{ doc.title }}</a>
+        </li>
+      {% endfor %}
+      </ul>
+    {% endfor %}
   </nav>
   <section class="post-content">{{ content }}</section>
 </article>

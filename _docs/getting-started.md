@@ -1,7 +1,7 @@
 ---
-layout: docs
 title: Getting started
 nav-index: 1
+category: Strymon Core
 ---
 
 ### Get Strymon

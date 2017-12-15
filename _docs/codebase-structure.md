@@ -1,7 +1,7 @@
 ---
-layout: docs
 title: Navigating the source code
 nav-index: 5
+category: Strymon Core
 ---
 
 The Strymon open source edition currently contains of a single repository

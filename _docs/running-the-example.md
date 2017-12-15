@@ -1,7 +1,7 @@
 ---
-layout: docs
 title: Running the example
 nav-index: 2
+category: Strymon Core
 ---
 
 The Strymon source code ships with a simple dataflow which generates a

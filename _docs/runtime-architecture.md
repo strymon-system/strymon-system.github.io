@@ -1,7 +1,7 @@
 ---
-layout: docs
 title: Run-Time Architecture
 nav-index: 4
+category: Strymon Core
 ---
 
 Strymon is a distributed system that builds on top of the [Rust](https://www.rust-lang.org/en-US/) prototype of [Timely Dataflow](https://github.com/frankmcsherry/timely-dataflow). Timely was first introduced in the [Naiad system](https://dl.acm.org/citation.cfm?id=2522738) and was an attractive option for us due to the following reasons:

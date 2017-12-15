@@ -3,10 +3,41 @@ baseurl: ""
 url: "https://strymon-system.github.io/"
 future: false
 
+# DOCUMENTATION
 collections:
   docs:
     output: true
     permalink: /:collection/:path
+
+# categories on the documentation site
+docs_categories:
+  - Strymon Core
+  #- SnailTrail
+  #- Session Reconstruction
+  - Futher Information
+
+# DEFAULT VALUES
+defaults:
+  -
+    scope:
+      path: ""
+      type: docs
+    values:
+      layout: "docs"
+  # we automatically apply the "SnailTrail" category to each file in the "_docs/snailtrail" subfolder
+  -
+    scope:
+      path: "_docs/snailtrail"
+      type: docs
+    values:
+      category: "SnailTrail"
+  # similar for anything about sessionization
+  -
+    scope:
+      path: "_docs/reconstruction"
+      type: docs
+    values:
+      category: "Session Reconstruction"
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
