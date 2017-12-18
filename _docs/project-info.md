@@ -1,7 +1,7 @@
 ---
 title: Project info
 nav-index: 1
-category: "Futher Information"
+category: Further Information
 ---
 
 - [Mailing list](mailto:strymon-users@lists.inf.ethz.ch)

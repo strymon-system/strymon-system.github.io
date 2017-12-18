@@ -2,7 +2,7 @@
 title: How to contribute
 nav-index: 0
 permalink: /docs/how-to-contribute
-category: Futher Information
+category: Further Information
 ---
 
 Strymon is currently developed and maintained by an open and friendly [team of researchers at ETH Zürich](http://strymon.systems.ethz.ch/about.html).
