@@ -13,7 +13,7 @@ collections:
 docs_categories:
   - Strymon Core
   #- SnailTrail
-  #- Session Reconstruction
+  - Session Reconstruction
   - Further Information
 
 # DEFAULT VALUES
