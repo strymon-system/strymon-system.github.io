@@ -1,1 +1,0 @@
-../../submodules/reconstruction/docs/input-log-format.md
