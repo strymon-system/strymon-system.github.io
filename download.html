@@ -3,14 +3,51 @@ layout: page
 title: Downloads
 markdown: kramdown
 ---
-<center>
-<p>The open source release of Strymon is hosted on <a href="https://github.com/strymon-system/">GitHub</a>. All regularly released versions are available for download as tar and zip files:
-<p><a class="button" href="https://github.com/strymon-system/strymon-core/releases">
-  Release Archive on GitHub
-</a></p>
+<section class="downloads">
+<p>The open source release of Strymon is hosted on <a href="https://github.com/strymon-system/">GitHub</a>. All regularly published versions are available for download as tar and zip files in the release archives. Alternatively, you can always check out the most recent version directly using the git clone URL.</p>
 
-<p>You can also always check out the most recent version directly using <code>git</code>:</p>
-<p><code class="download">git clone https://github.com/strymon-system/strymon-core.git</code></p>
-</center>
+<div class="repolist">
+  <div class="repolink">
+    <i class="fa fa-github" aria-hidden="true"></i>
+    <a href="https://github.com/strymon-system/strymon-core">strymon-core</a>
+  </div>
+  <p>The core Strymon execution run-time.</p>
+  <ul>
+    <li>
+      <b>Download</b>:
+      <a href="https://github.com/strymon-system/strymon-core/releases"><i class="fa fa-file-archive-o" aria-hidden="true"></i> Release Archive</a>
+    </li>
+    <li>
+      <b>Clone URL</b>:
+      <i class="fa fa-download" aria-hidden="true"></i>
+      <input type="text" name="clone" value="https://github.com/strymon-system/strymon-core.git" readonly onclick="this.select();">
+    </li>
+  </ul>
 
+  <div class="repolink">
+    <i class="fa fa-github" aria-hidden="true"></i>
+    <a href="https://github.com/strymon-system/reconstruction">reconstruction</a>
+  </div>
+  <p>Online reconstruction of structural information from datacenter logs.</p>
+  <ul>
+    <li>
+      <b>Clone URL</b>:
+      <i class="fa fa-download" aria-hidden="true"></i>
+      <input type="text" name="clone" value="https://github.com/strymon-system/reconstruction.git" readonly onclick="this.select();">
+    </li>
+  </ul>
 
+  <div class="repolink">
+    <i class="fa fa-github" aria-hidden="true"></i>
+    <a href="https://github.com/strymon-system/snailtrail">snailtrail</a>
+  </div>
+  <p>Online critical path analysis of distributed dataflow systems.</p>
+  <ul>
+    <li>
+      <b>Clone URL</b>:
+      <i class="fa fa-download" aria-hidden="true"></i>
+      <input type="text" name="clone" value="https://github.com/strymon-system/snailtrail.git" readonly onclick="this.select();">
+    </li>
+  </ul>
+</div>
+</section>
