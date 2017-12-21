@@ -3,4 +3,4 @@
 	url = https://github.com/strymon-system/snailtrail.git
 [submodule "submodules/reconstruction"]
 	path = submodules/reconstruction
-	url = https://github.com/zchothia/reconstruction.git
+	url = https://github.com/strymon-system/reconstruction.git
