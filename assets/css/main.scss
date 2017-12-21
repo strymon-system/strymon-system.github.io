@@ -28,6 +28,37 @@ pre.highlight {
   background-color: #f7f7f7;
 }
 
+.downloads {
+  max-width: 800px;
+  margin: 0 auto;
+
+  .repolist {
+    padding-left: 1em;
+  }
+
+  .repolink {
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 0.33em 0;
+  }
+
+  input {
+    font-family: monospace;
+    font-size: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    padding: 5px 10px 5px 5px;
+    border-radius: 3px;
+    @media (min-width: 1000px) {
+      width: 380px;
+    }
+  }
+
+  ul {
+    list-style: none;
+  }
+}
+
 code.download {
   background-color: #f7f7f7;
   padding: 1ex;
