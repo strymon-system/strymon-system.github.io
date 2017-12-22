@@ -1,12 +1,16 @@
 ---
 layout: post
-title: Understanding Distributed Applications with Strymon
+title: 🎁 Strymon Holiday Season Release 🎁
 subtitle: Open-Source Release of SnailTrail and Sessionization
 ---
 
+We are very happy to announce our last release within the Strymon project for this year: The open-source release of [SnailTrail](https://github.com/strymon-system/snailtrail) and our work on [online sessionization and structural reconstruction](https://github.com/strymon-system/reconstruction).
+
+## Understanding Distributed Applications with Strymon
+
 Distributed applications and frameworks are often heavily instrumented to provide detailed traces of their execution. These sources have proven crucial for understanding systems behavior and debugging performance issues. With Strymon, our goal is to provide these insights to users in real-time, allowing them to take appropriate actions as quickly as possible.
 
-Today, we are very happy to announce the open-source release of two projects which have been developed for exactly this purpose as part of Strymon: The work on [online reconstruction](http://strymon.systems.ethz.ch/real_time_analytics.html) of structural information from datacenter logs and the source code of [SnailTrail](http://strymon.systems.ethz.ch/critical_path.html), our most recent work on understanding the performance of distributed dataflows.
+Today, we are announcing the open-source release of two projects which have been developed for exactly this purpose as part of Strymon: The work on [online reconstruction](http://strymon.systems.ethz.ch/real_time_analytics.html) of structural information from datacenter logs and the source code of [SnailTrail](http://strymon.systems.ethz.ch/critical_path.html), our most recent work on understanding the performance of distributed dataflows.
 
 ### Online Reconstruction of Structural Information from Datacenter Logs
 
@@ -27,6 +31,4 @@ The released source code contains the libraries for construing the program activ
 
 ---
 
-<center>
-  As always, feel free to contact us at <a href="mailto:strymon-users@lists.inf.ethz.ch">strymon-users@lists.inf.ethz.ch</a> for any questions or comments.
-</center>
+Stay tuned for more updates from us in 2018 -- and as always, please do not hesitate to contact us at <a href="mailto:strymon-users@lists.inf.ethz.ch">strymon-users@lists.inf.ethz.ch</a> for any questions or comments.
