@@ -24,11 +24,11 @@ to the chosen executors.
 
 The following glossary provides a brief overview of the different components of the Strymon run-time:
 
-Job 
-: A user-submitted Timely dataflow program running in the system, which might spawn over multiple machines and threads. Progress tracking is available within the domain of a job through the mechanisms provide by Timely dataflow. It enables communication and synchronization between the workers of a single job. Communication between jobs is achieved through the publish-subscribe mechanism discussed below. Historically also "jobs" have been called "queries", a naming scheme which is still apparent in the source code.
+Job
+: A user-submitted Timely dataflow program running in the system, which might spawn over multiple machines and threads. Progress tracking is available within the domain of a job through the mechanisms provide by Timely dataflow. It enables communication and synchronization between the workers of a single job. Communication between jobs is achieved through the publish-subscribe mechanism discussed below.
 
 Worker
-: A thread belonging to a query, driving the computation of its local dataflow graph instance. The number of workers defines the level of parallelism of a job.
+: A thread belonging to a job, driving the computation of its local dataflow graph instance. The number of workers defines the level of parallelism of a job.
 
 Executor
 : The process running on each machine responsible for running job processes. Every executor which joins the system registers itself at the coordinator.
@@ -48,17 +48,19 @@ Subscriber
 ![Overview of the components of the Strymon run-time]({{ "/assets/docs/strymon-runtime-components.svg" | absolute_url }})
 
 *Figure*: *Jobs* (dashed boxes) consist of one or more *worker* threads (rounded grey boxes) driving the dataflow computation. A job might
-span over multiple *executors*, makeing use of the network for message exchanges between the workers of a job.
+span over multiple *executors*, making use of the network for message exchanges between the workers of a job.
 The *coordinator* maintains a connection to every executor and every job process. The state of the whole system is stored in the *catalog*.
 
 ## Publish-Subscribe Mechanism
 
-While data processing jobs are expressed in the form of timely dataflows, data sources in Strymon are modeled as typed data streams. Strymon adopts an integrated publish-subscribe approach, which allows dataflow programs to also share their produced streams for consumption by other running dataflows.
+While data processing jobs are expressed in the form of Timely Dataflow graphs, data sources in Strymon are modeled as typed data streams. Strymon adopts an integrated publish-subscribe approach, which allows dataflow programs to also share their produced streams for consumption by other running dataflows.
 
 Topics currently come in two different flavors:
 
- - *Stream topics*: Stateless, asynchronous topics publishing the contents and progress tracking information of a Timely stream. Data produced before a consumer subscribed to a certain topic will not be received by that receiver.
- - *Collection topics*: Stateful topics which expose state in form of a multiset. The contents of the multiset and all subsequent updates is observed as a stream of insertions and removals by its subscribers. The collectoin publisher ensures that late subscribers get a consistent view of the current state upon receiving the subscription request.
+ - *Stream topics*: Stateless, asynchronous topics publishing the contents and progress tracking information of a Timely stream. Data produced before a consumer subscribed to a certain topic will not be received by that receiver. Please refer to the documentation about the [pub-sub mechanism](pubsub-protocol) for more details about the stream protocol.
+ - *Service topics*: These topics expose a [`strymon_communication`](https://strymon-system.github.io/strymon-core/strymon_communication/rpc/index.html) service, which allows clients to submit stateful requests, for example to fetch initialization data for the computation.
+
+The API documentation for the publish-subscribe system can be found in the [`strymon_job`](https://strymon-system.github.io/strymon-core/strymon_job/index.html) crate.
 
 #### Additional information:
 

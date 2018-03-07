@@ -13,11 +13,10 @@ fetch the most recent version directly using `git`:
 $ git clone https://github.com/strymon-system/strymon-core.git
 Cloning into 'strymon-core'...
 …
-Resolving deltas: 100% (1067/1067), done.
 $ cd strymon-core
 ```
 
-You will need the nightly version of the [Rust](https://www.rust-lang.org/en-US/)
+You will need a recent version of the [Rust](https://www.rust-lang.org/en-US/)
 compiler and the [Cargo](https://crates.io/) package manager to build the
 Strymon source code.
 
@@ -30,12 +29,9 @@ run-time, the provided example programs, and essential dependencies such as
 [Timely and Differential Dataflow](https://github.com/frankmcsherry/timely-dataflow).
 
 > *Note*: The easiest way to install the nightly version of the Rust compiler
-> and Cargo is using [rustup.rs](https://rustup.rs/). You can assign a directory override
-> for the nightly version by running the following command
-> inside the `strymon-core` project folder:
-> ```terminal
-> $ rustup override set nightly
-> ```
+> and Cargo is using [rustup.rs](https://rustup.rs/).
+> As of Stymon Core version 0.2, we support Rust 1.22 or newer. We recommend
+> you use the most recent stable version of the Rust compiler.
 
 ### Starting a local Strymon cluster
 
