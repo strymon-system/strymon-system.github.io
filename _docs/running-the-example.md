@@ -4,7 +4,7 @@ nav-index: 2
 category: Strymon Core
 ---
 
-The Strymon source code ships with a simple dataflow which generates a
+The Strymon Core source code ships with a simple dataflow which generates a
 small datacenter network topology and allows for the simulation of switch
 and link failures.
 
@@ -14,8 +14,8 @@ of the following components:
 #### Topology Generator
 
 This program generates a random datacenter network topology and publishes it
-in a topic called `topology`. This program is able to inject random network
-faults into the simulated topology.
+in a topic called `topology`. It also exports a service for fetching an initial
+snapshot of the topology and injecting faults.
 
 #### Connected Components
 
@@ -42,8 +42,8 @@ and report the number of generated switches and links. You can follow the output
 of all running programs by inspecting the executor log file:
 
 ```terminal
-$ tail -f logs/executor_localhost.log           
-INFO:…: QueryId(0) | Hosts: 1024, Switches: 320, Ports: 16, Links: 2048
+$ tail -f logs/executor_localhost.log
+INFO:…: Job(0) | Hosts: 1024, Switches: 320, Ports: 16, Links: 2048
 ```
 
 ## Step 2: Running connected components
@@ -62,7 +62,7 @@ In the logs you will see the output of the new job. The initially generated
 network forms a connected graph:
 
 ```
-INFO:…: QueryId(1) | All nodes in the graph are now connected.
+INFO:…: JobId(1) | All nodes in the graph are now connected.
 ```
 
 ## Step 3: Injecting network faults
@@ -72,8 +72,7 @@ Using the provided script, you can disconnect a random switch for 10 seconds
 by running the following command:
 
 ```terminal
-$ ./apps/topology-generator/inject-fault.sh disconnect-random-switch
-OK
+$ ./bin/strymon submit apps/fault-injection -- disconnect-random-switch
 ```
 
 In the logs, you should first see the topology generator disconnecting this
@@ -82,14 +81,14 @@ algorithm detecting that this switch is now not connected to the network
 anymore:
 
 ```
-INFO:…: QueryId(0) | Disconnecting randomly chosen switch #149
-INFO:…: QueryId(1) | There are now 2 disconnected partitions in the graph!
+INFO:…: JobId(0) | Disconnecting randomly chosen switch #149
+INFO:…: JobId(1) | There are now 2 disconnected partitions in the graph!
 ```
 
 Note that the simulated fault is only temporary. After 10 seconds, the
 switch will be reconnected with its peers:
 
 ```
-INFO:…: QueryId(1) | All nodes in the graph are now connected.
+INFO:…: JobId(1) | All nodes in the graph are now connected.
 ```
 

@@ -1,6 +1,6 @@
 ---
 title: Navigating the source code
-nav-index: 5
+nav-index: 6
 category: Strymon Core
 ---
 
@@ -17,6 +17,32 @@ example application.
    [how to run an example](running-the-example) for more information about
    them.
 
+ - `src/`
+
+   This folder contains the source code for the crates which form the core of
+   the Strymon publish-subscribe mechanism and execution run-time.
+
+    - **[`strymon_cli`]**: This binary crate contains the implementation of the
+      **`strymon`** command-line interface.
+
+    - **[`strymon_job`]**: Client library for writing custom Strymon jobs. This
+      crate also implements the publish-subscribe protocol.
+
+    - **[`strymon_coordinator`]**: The implementation and internal APIs of the
+       coordinator and catalog.
+
+    - **[`strymon_executor`]**: The default executor implementation and job
+       spawning logic for native executables.
+
+    - **[`strymon_rpc`]**: The message types used for remote-procedure calls
+       between the different Strymon components.
+
+    - **[`strymon_model`]**: Common data type definitions, used mainly in the
+      catalog.
+
+    - **[`strymon_communication`]**: Low-level networking code used for
+       communication between the different components of Strymon.
+
  - `bin/`
 
    The command-line utility for interacting with the Strymon cluster. Their
@@ -26,37 +52,24 @@ example application.
 
    Folder for configuration files. At present, contains a default host file
    for running the executors. The `conf/executors` file shall contain a
-   single host name per line. Note that the scripts currently do not 
+   single host name per line. Note that the scripts currently do not
    support running more than one executor per machine.
 
- - `src/`
+  - `logs/`
 
-   This folder contians the source code for the crates which form the core of
-   the Strymon publish-subscribe mechanism and execution run-time.
+    The default destination for log files created by the coordinator and
+    executor instances.
 
-   - `src/strymon_runtime/`
+  - `jobs/`
 
-      This crate contains the bulk of the execution run-time, the
-      implementation of the `strymon` command-line utility and the client
-      library used for writing Strymon jobs using Timely Dataflow.
+    A temporary working directory for storing the artifacts of running jobs.
+    Each job process gets its own directory:
+    `jobs/<submission-timestamp>_<job-id>/<process-index>/`
 
-      > **Note**: Both the internal organization and API of this crate is
-      > currently not considered stable. Strymon jobs are required to use the
-      > API in the `strymon_runtime::query` module to interact with the system.
-
-   - `src/strymon_communication/`
-
-     The networking code and protocol used for communication between the
-     different components of Strymon.
-
-      > **Note**: The API of this crate is currently not considered stable.
-
-   - `src/strymon_rpc/`
-
-      This library defines the types used in the remote procedure call protocol
-      between the different components.
-
-   - `src/strymon_model/`
-
-      Type definitions of the relations stored in the catalog.
-
+[`strymon_cli`]: command-line-interface
+[`strymon_job`]: https://strymon-system.github.io/strymon-core/strymon_job/index.html
+[`strymon_coordinator`]: https://strymon-system.github.io/strymon-core/strymon_coordinator/index.html
+[`strymon_executor`]: https://strymon-system.github.io/strymon-core/strymon_executor/index.html
+[`strymon_rpc`]: https://strymon-system.github.io/strymon-core/strymon_rpc/index.html
+[`strymon_model`]: https://strymon-system.github.io/strymon-core/strymon_model/index.html
+[`strymon_communication`]: https://strymon-system.github.io/strymon-core/strymon_communication/index.html
