@@ -8,6 +8,9 @@ collections:
   docs:
     output: true
     permalink: /:collection/:path
+  research:
+    output: true
+    permalink: /:collection/:path
 
 # categories on the documentation site
 docs_categories:
@@ -24,6 +27,12 @@ defaults:
       type: docs
     values:
       layout: "docs"
+  -
+    scope:
+      path: ""
+      type: research
+    values:
+      layout: "research"
   # we automatically apply the "SnailTrail" category to each file in the "_docs/snailtrail" subfolder
   -
     scope:
@@ -61,7 +70,7 @@ theme_settings:
     - title: Documentation
       url: /docs
     - title: Research
-      url: http://strymon.systems.ethz.ch/
+      url: /research
     - title: Blog
       url: /blog
 
