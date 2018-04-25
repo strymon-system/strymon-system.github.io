@@ -3,7 +3,7 @@
 }
 article,
 .comments {
-  @extend %padding-regular;
+  @extend %padding-small;
   border-bottom: 1px solid $border-color;
   float: left;
   width: 100%;
@@ -23,6 +23,9 @@ article {
   }
   .footnotes {
     font-size: 0.9em;
+  }
+  .post-content {
+    text-align: justify;
   }
 }
 header {

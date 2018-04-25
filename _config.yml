@@ -8,6 +8,9 @@ collections:
   docs:
     output: true
     permalink: /:collection/:path
+  research:
+    output: true
+    permalink: /:collection/:path
 
 # categories on the documentation site
 docs_categories:
@@ -15,6 +18,11 @@ docs_categories:
   #- SnailTrail
   - Session Reconstruction
   - Further Information
+
+research_categories:
+  - Publications
+  - Strymon
+  - Components and use-cases
 
 # DEFAULT VALUES
 defaults:
@@ -24,6 +32,12 @@ defaults:
       type: docs
     values:
       layout: "docs"
+  -
+    scope:
+      path: ""
+      type: research
+    values:
+      layout: "research"
   # we automatically apply the "SnailTrail" category to each file in the "_docs/snailtrail" subfolder
   -
     scope:
@@ -52,18 +66,20 @@ theme_settings:
   header_text: >
      <p><strong>Strymon</strong> is a platform for online modelling of enterprise datacenter behavior</p>
 
-     <p><a class="button" href="/docs/getting-started">Get Started</a></p>
+     <a class="button" href="/research">Our Research</a> <a class="button" href="/docs/getting-started">Get Started</a>
   header_text_feature_image:
 
   header_links:
-    - title: Code
-      url: /download
-    - title: Documentation
-      url: /docs
     - title: Research
-      url: http://strymon.systems.ethz.ch/
+      url: /research
+    - title: Publications
+      url: /research/publications
+    - title: Code
+      url: /download.html
     - title: Blog
       url: /blog
+    - title: Documentation
+      url: /docs
 
   footer_text: >
    Copyright © 2017 <a href="https://www.systems.ethz.ch/">ETH Zürich</a> | Theme based on <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>

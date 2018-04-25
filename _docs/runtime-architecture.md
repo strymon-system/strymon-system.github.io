@@ -45,7 +45,7 @@ Publisher
 Subscriber
 : A Timely dataflow job consuming the data from a topic it has subscribed to. By subscribing to a topic, a job will observe all events published since it joined. Jobs can subscribe to multiple topics at the same time.
 
-![Overview of the components of the Strymon run-time]({{ "/assets/docs/strymon-runtime-components.svg" | absolute_url }})
+![Overview of the components of the Strymon run-time]({{ "/assets/docs/strymon-runtime-components.svg" | relative_url }})
 
 *Figure*: *Jobs* (dashed boxes) consist of one or more *worker* threads (rounded grey boxes) driving the dataflow computation. A job might
 span over multiple *executors*, making use of the network for message exchanges between the workers of a job.

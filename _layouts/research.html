@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<article {% if page.feature-img %}class="feature-image"{% endif %}>
+  <header style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
+    {% if page.category %}<h2 class="subtitle">{{ page.category }}</h2>{% endif %}
+    <h1 class="title">{{ page.title }}</h1>
+  </header>
+  <nav class="side-nav">
+    {% comment %}
+    The following code creates the side navigation for the research pages.
+
+    Documents with unexisting or misspelled categories, or no category at all,
+    will be printed first by the first for loop below, i.e. under the title
+    "Documentation".
+
+    Any pages with valid pre-defined categories (i.e. categories defined in
+    `docs_categories` collection the `_config.yml`) will be emitted in the
+    according category in the second for loop. The order of categories is the
+    same as the order defined in the `_config.yml`.
+
+    Note: The `nav-index` of each document defines the order of the document
+    within its category. Documents without any `nav-index` will be put at the
+    bottom.
+    {% endcomment %}
+    <h4>Research</h4>
+    <ul>
+    {% assign research = site.research | sort: 'nav-index', 'last' %}
+    {% for doc in research %}
+      {% unless site.research_categories contains doc.category %}
+        <li {% if page.url == doc.url %} class="active" {% endif %} >
+          <a href="{{ doc.url | relative_url }}">{{ doc.title }}</a>
+        </li>
+      {% endunless %}
+    {% endfor %}
+    </ul>
+    {% for category in site.research_categories %}
+      <h4>{{ category }}</h4>
+      <ul>
+      {% assign research = site.research | where: 'category',category | sort: 'nav-index', 'last' %}
+      {% for doc in research %}
+        <li {% if page.url == doc.url %} class="active" {% endif %} >
+          <a href="{{ doc.url | relative_url }}">{{ doc.title }}</a>
+        </li>
+      {% endfor %}
+      </ul>
+    {% endfor %}
+  </nav>
+  <section class="post-content">{{ content }}</section>
+</article>

@@ -59,3 +59,20 @@ In include documents from other repositories into the main page, you will need t
   2. create a symbolic link from the `_docs` folder into your submodule. E.g.: `_docs/sessionization/concepts.md` → `../submodules/reconstruction/docs/concepts.md` and add it to git.
 
 The GitHub Pages runner will automatically checkout the submodule and resolve the symlink on the final build.
+
+### Adding research pages
+
+Research pages are rendered for any files Markdown files (with a YAML front matter) in the `_research` folder. A typical YAML front matter might look like this:
+
+    ---
+    title: Title of the Documentation Page
+    nav-index: 4
+    category: Category Name
+    ---
+
+The `title` attribute is mandatory and rendered prominently at the top of each document and used as the link title in the navigation menu.
+
+Note that any category referred to in the `category` attribute must also be defined in the `research_categories` collection in `_config.yml`. Otherwise it will be put into the default category at the top of the documentation menu.
+
+The `nav-index` of each document defines the order of the document within its category. Documents without any `nav-index` will be put at the bottom.
+
