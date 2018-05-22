@@ -14,29 +14,23 @@ Strymon is being developed by a small team of researchers at the [Systems Group]
     <td align="center">{% include image.html file="john.jpg" url="https://www.systems.ethz.ch/people/john-liagouris" max-width="110" alt="John Liagouris" caption="John Liagouris" %} </td>
   </tr>
   <tr>
+    <td align="center">{% include image.html file="frank.jpeg" url="https://github.com/frankmcsherry" max-width="130" alt="Frank McSherry" caption="Frank McSherry" %}</td>
     <td align="center">{% include image.html file="zaheer.jpg" url="https://people.inf.ethz.ch/zchothia/" max-width="120" alt="Zaheer Chothia" caption="Zaheer Chothia" %} </td>
     <td align="center">{% include image.html file="moritz.jpg" url="https://www.systems.ethz.ch/people/moritz-hoffmann" max-width="105" alt="Moritz Hoffmann" caption="Moritz Hoffmann" %} </td>
     <td align="center">{% include image.html file="andrea.jpg" url="https://people.inf.ethz.ch/andreal/" max-width="162" alt="Andrea Lattuada" caption="Andrea Lattuada"%}</td>
-    <td align="center">{% include image.html file="sebastian.png" url="https://www.systems.ethz.ch/people/sebastian-wicki" max-width="121" alt="Sebastian Wicki" caption="Sebastian Wicki" %}  </td>
   </tr>
 </table> 
 
-## Master and Bachelor students
+## Former members
 
-* Anna Szybalska (Master student)
-
-<br>
-
-## Scientific collaborators
-<table style="width:600">
+<table>
   <tr>
-  <td align="center">
-     {% include image.html file="frank.jpeg" url="https://github.com/frankmcsherry" max-width="130" alt="Frank McSherry" caption="Frank McSherry" %}        
-  </td>
+    <td align="center">{% include image.html file="sebastian.png" url="https://www.systems.ethz.ch/people/sebastian-wicki" max-width="121" alt="Sebastian Wicki" caption="Sebastian Wicki" %}</td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
 </table>
-
-## Former members
 
 * Ralf Sager (Master student)
 
@@ -46,3 +40,4 @@ Strymon is being developed by a small team of researchers at the [Systems Group]
 
 * Lukas Striebel (Master student)
 
+* Anna Szybalska (Master student)

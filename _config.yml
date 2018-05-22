@@ -19,6 +19,10 @@ docs_categories:
   - Session Reconstruction
   - Further Information
 
+research_categories:
+  - Strymon
+  - Components and use-cases
+
 # DEFAULT VALUES
 defaults:
   -

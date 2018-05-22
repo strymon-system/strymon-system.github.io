@@ -10,11 +10,25 @@ Strymon leverages existing logging and monitoring pipelines of modern production
 
 Strymon's ultimate goal is to drive research and innovation in datacenter management. It advances the current practices in that the hypothetical datacenter state is fully exposed to Strymon users in a timely manner (as well-defined data streams), enabling the composition of deep analytics and cross-layer simulations in real time and within the same execution engine.
 
-<br>
+## Support
+
+<div>
+    <div style="display: inline-block; margin-right:50px;">
+        <img style="width: 200px;" src="/images/amadeus_logo.svg" alt="Amadeus"/>
+    </div>
+    <div style="display: inline-block; margin-right:50px;">
+         <img style="width: 250px;" src="/images/snf_logo.png" alt="SNF"/>
+    </div>
+    <div style="display: inline-block; margin-right:50px;">
+        <img style="width: 200px;" src="/images/google_logo.png" alt="Google"/>
+    </div>
+</div>
+
+
+
+## Strymon's architecture
 
 {% include image.html file="strymon.svg" max-width="840" alt="Strymon Architecture" %}
-
-<br>
 
 Strymon's design and implementation is driven by the following needs:
 
