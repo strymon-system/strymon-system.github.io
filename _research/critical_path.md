@@ -17,9 +17,9 @@ Strymon's novel approach towards online performance analysis is implemented in a
 ## Additional material
 
 
-Moritz Hoffmann, Andrea Lattuada, John Liagouris, Vasiliki Kalavri, Desislava Dimitrova, Sebastian Wicki, Zaheer Chothia, Timothy Roscoe. [SnailTrail: Generalizing Critical Paths for Online Analysis of Distributed Dataflows](pdf/nsdi18-hoffmann.pdf). **NSDI '18**. Source code is available on [Github](https://github.com/strymon-system/snailtrail).
+Moritz Hoffmann, Andrea Lattuada, John Liagouris, Vasiliki Kalavri, Desislava Dimitrova, Sebastian Wicki, Zaheer Chothia, Timothy Roscoe. [SnailTrail: Generalizing Critical Paths for Online Analysis of Distributed Dataflows](/assets/pdf/nsdi18-hoffmann.pdf). **NSDI '18**. Source code is available on [Github](https://github.com/strymon-system/snailtrail).
 
 Ralf Sager, John Liagouris, Desislava Dimitrova, Andrea Lattuada, Vasiliki Kalavri, Zaheer Chothia, Moritz Hoffmann, Timothy Roscoe. [SnailTrail: Online Bottleneck Detection for your Dataflow](https://eurosys2017.github.io/assets/data/posters/poster13-Sager.pdf). **EuroSys**, 2017. 
 
-Ralf Sager. [Real-Time Performance Analysis of a Modern Data-parallel Stream Processing Engine](pdf/timely_cpath_thesis.pdf). **Master Thesis**. Systems Group, Department of Computer Science, ETH Zürich, September 2016. 
+Ralf Sager. [Real-Time Performance Analysis of a Modern Data-parallel Stream Processing Engine](/assets/pdf/timely_cpath_thesis.pdf). **Master Thesis**. Systems Group, Department of Computer Science, ETH Zürich, September 2016. 
 

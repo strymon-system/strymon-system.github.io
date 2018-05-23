@@ -14,4 +14,4 @@ We developed a routing module by leveraging a novel design approach. In particul
 
 ## Additional Material
 
-Christian Stücklberger. [Expressing the Routing Logic of a SDN Controller as a Differential Dataflow](pdf/sdn_thesis.pdf). **Master Thesis**. Systems Group, Department of Computer Science, ETH Zürich, September 2016.
+Christian Stücklberger. [Expressing the Routing Logic of a SDN Controller as a Differential Dataflow](/assets/pdf/sdn_thesis.pdf). **Master Thesis**. Systems Group, Department of Computer Science, ETH Zürich, September 2016.

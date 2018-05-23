@@ -14,13 +14,13 @@ Strymon's ultimate goal is to drive research and innovation in datacenter manage
 
 <div>
     <div style="display: inline-block; margin-right:50px;">
-        <img style="width: 200px;" src="/images/amadeus_logo.svg" alt="Amadeus"/>
+        <img style="width: 180px; margin-bottom: 20px;" src="/assets/img/research/amadeus_logo.svg" alt="Amadeus"/>
     </div>
     <div style="display: inline-block; margin-right:50px;">
-         <img style="width: 250px;" src="/images/snf_logo.png" alt="SNF"/>
+         <img style="width: 200px; margin-bottom: 20px;" src="/assets/img/research/snf_logo.png" alt="SNF"/>
     </div>
     <div style="display: inline-block; margin-right:50px;">
-        <img style="width: 200px;" src="/images/google_logo.png" alt="Google"/>
+        <img style="width: 180px; margin-bottom: 20px;" src="/assets/img/research/google_logo.png" alt="Google"/>
     </div>
 </div>
 
@@ -28,15 +28,15 @@ Strymon's ultimate goal is to drive research and innovation in datacenter manage
 
 ## Strymon's architecture
 
-{% include image.html file="strymon.svg" max-width="840" alt="Strymon Architecture" %}
+![Overview of Strymon's architecture]({{ "/assets/img/research/strymon.svg" | absolute_url }})
 
 Strymon's design and implementation is driven by the following needs:
 
  * **Low latency - High throughput.** Strymon focuses on real-time data processing over thousands of input streams, e.g. logs of events coming from the datacenter. Modern datacenters are heavily instrumented and produce TBs of event logs within minutes; in this setting, fast reaction to changes in the behavior of the datacenter requires that vast amounts of events are being processed *online*, while the logs are generated, kept for a while and then dropped. To meet this need, Strymon adopts a pure [event-driven streaming execution model](execution_model.html), which provides interactive response times, even for complex *iterative* data processing pipelines.
  
- * **Scale up and out.** Strymon can be deployed in clusters of a modern multi-core machines with zero configuration cost. Any dataflow program in Strymon is *transparently* parallelized using the available *workers* (threads/processes) as specified by the user. Currently, the number of available workers is statically defined (upon start-up) but [dynamic re-scaling in Strymon is the focus of our ongoing research](dynamic_rescaling.html).
+ * **Scale up and out.** Strymon can be deployed in clusters of a modern multi-core machines with zero configuration cost. Any dataflow program in Strymon is *transparently* parallelized using the available *workers* (threads/processes) as specified by the user. Currently, the number of available workers is statically defined (upon start-up) but [dynamic re-scaling in Strymon is the focus of our ongoing research](re_scaling.html).
 
- * **Reliability.** Strymon focuses on continuous mission-critical management tasks in the datacenter; therefore, it is designed and implemented as a system that is *always up and running*. For small datacenters, Strymon can be used as a rack-scale system but we also found cases where it needs to be deployed in large clusters, e.g. for scaling out long-running network analytics. In this setting, [fast recovery from system failures is of utmost importance for Strymon's adoption in practice, and is something we are currently investigating](fault_tolerance.html).
+ * **Reliability.** Strymon focuses on continuous mission-critical management tasks in the datacenter; therefore, it is designed and implemented as a system that is *always up and running*. For small datacenters, Strymon can be used as a rack-scale system but we also found cases where it needs to be deployed in large clusters, e.g. for scaling out long-running network analytics. In this setting, fast recovery from system failures is of utmost importance for Strymon's adoption in practice, and is something we are currently investigating.
 
  * **Expressivity.** Strymon's programming framework supports a wide range of datacenter management tasks, from standard performance monitoring to complex network simulations with dynamic routing algorithms and advanced load balancing techniques. Strymon users can express jobs as [timely dataflows](execution_model.html) with an imperative language. Recently, we have started experimenting with high-level declarative languages to facilitate datacenter analytics and certain management tasks like resource virtualization.
 

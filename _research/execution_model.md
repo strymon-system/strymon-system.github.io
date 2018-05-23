@@ -16,13 +16,15 @@ Strymon also relies on some features of [Differential Dataflow](https://github.c
 
 Data sources in Strymon are modeled as typed data streams while data processing jobs are expressed in the form of timely dataflows. Each data stream can be forked and used by multiple dataflows simultaenously. Besides the input data streams, Strymon adopts an integrated publish-subscribe approach, which allows dataflow programs to also share their produced streams for consumption by other running dataflows, as it is shown below.
 
-{% include image.html file="query1.svg" alt="Q1" %}
+![Query 1]({{ "/assets/img/research/query1.svg" | absolute_url }})
 
-{% include image.html file="query2.svg" alt="Q2" caption="Figure 1: Individual queries submitted to Strymon" %}
+Individual queries submitted to Strymon:
+![Query 2]({{ "/assets/img/research/query2.svg" | absolute_url }})
 
-{% include image.html file="q1q2.svg" alt="Q12" caption="Figure 2: Batch query execution" %}
+Batch query execution:
+![Query 2]({{ "/assets/img/research/q1q2.svg" | absolute_url }})
 
-Reusing results of Strymon computations is especially helpful, not only for avoiding redundant work, but also for building complex simulations upon simpler ones. This is demostrated in various use cases, such as [this one](queryable_simulation.html). 
+Reusing results of Strymon computations is especially helpful, not only for avoiding redundant work, but also for building complex simulations upon simpler ones. This is demostrated in various use cases, such as [this one](what_if). 
 
 
 Additional information:

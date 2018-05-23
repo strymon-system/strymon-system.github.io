@@ -10,4 +10,4 @@ We are studying the aspect of automatically provisioning resources for stateful 
 
 ## Additional material
 
-Moritz Hoffmann, Frank McSherry, Andrea Lattuada. [Latency-conscious dataflow reconfiguration](pdf/beyondmr18-hoffmann.pdf). **BeyondMR**, 2018
+Moritz Hoffmann, Frank McSherry, Andrea Lattuada. [Latency-conscious dataflow reconfiguration](/assets/pdf/beyondmr18-hoffmann.pdf). **BeyondMR**, 2018
