@@ -20,6 +20,7 @@ docs_categories:
   - Further Information
 
 research_categories:
+  - Publications
   - Strymon
   - Components and use-cases
 
@@ -65,18 +66,20 @@ theme_settings:
   header_text: >
      <p><strong>Strymon</strong> is a platform for online modelling of enterprise datacenter behavior</p>
 
-     <p><a class="button" href="/docs/getting-started">Get Started</a></p>
+     <a class="button" href="/research">Our Research</a> <a class="button" href="/docs/getting-started.html">Get Started</a>
   header_text_feature_image:
 
   header_links:
-    - title: Code
-      url: /download
-    - title: Documentation
-      url: /docs
     - title: Research
       url: /research
+    - title: Publications
+      url: /research/publications.html
+    - title: Code
+      url: /download.html
     - title: Blog
       url: /blog
+    - title: Documentation
+      url: /docs
 
   footer_text: >
    Copyright © 2017 <a href="https://www.systems.ethz.ch/">ETH Zürich</a> | Theme based on <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>

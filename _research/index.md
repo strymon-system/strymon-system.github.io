@@ -28,7 +28,7 @@ Strymon's ultimate goal is to drive research and innovation in datacenter manage
 
 ## Strymon's architecture
 
-![Overview of Strymon's architecture]({{ "/assets/img/research/strymon.svg" | absolute_url }})
+![Overview of Strymon's architecture]({{ "/assets/img/research/strymon.svg" | relative_url }})
 
 Strymon's design and implementation is driven by the following needs:
 

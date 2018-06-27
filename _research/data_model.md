@@ -22,7 +22,7 @@ An example property graph from Strymon's [incremental routing use case](incremen
 
 * *E* is the set of edges representing physical links identified by their endpoints. Each edge has an associated weight *w* used to denote bandwidth, which is used by the incremental routing algorithm.
 
-![An example Property Graph]({{ "/assets/img/research/pg-example.jpeg" | absolute_url }})
+![An example Property Graph]({{ "/assets/img/research/pg-example.jpeg" | relative_url }})
 
 A core feature of Strymon's property graphs is that elements are also associated with a delta value δ ∈ {−1,+1} that is used to represent changes in the graph *G*. 
 
