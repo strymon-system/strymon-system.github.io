@@ -5,8 +5,9 @@ category: Publications
 ---
 
 ## Papers
+* Vasiliki Kalavri, John Liagouris, Moritz Hoffmann, Desislava Dimitrova, Matthew Forshaw, Timothy Roscoe. [Three steps is all you need: fast, accurate, automatic scaling decisions for distributed streaming dataflows](). **OSDI**, 2018.
 
-* Moritz Hoffmann, Frank McSherry, Andrea Lattuada. [Latency-conscious dataflow reconfiguration](/assets/pdf/beyondmr18-hoffmann.pdf). **BeyondMR**, 2018
+* Moritz Hoffmann, Frank McSherry, Andrea Lattuada. [Latency-conscious dataflow reconfiguration](/assets/pdf/beyondmr18-hoffmann.pdf). **BeyondMR**, 2018.
 
 * M. Hoffmann, A. Lattuada, J. Liagouris, V. Kalavri, D. Dimitrova, S. Wicki, Z. Chothia, T. Roscoe. [SnailTrail: Generalizing Critical Paths for Online Analysis of Distributed Dataflows](https://www.usenix.org/biblio-1542), in 15th USENIX Symposium on Networked Systems Design and Implementation. **NSDI**, 2018.
 
