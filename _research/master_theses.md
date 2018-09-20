@@ -10,7 +10,7 @@ permalink: /research/master_theses.html
 
 * [Online performance tuning of distributed dataflows using graph analytics](/assets/pdf/master-thesis-proposals/snailtrail-proposal.pdf)
 
-* [Real-time verification of datacenter security policies via online log analysis](/assets/pdf/master-thesis-proposals/online-security-proposal.pdf)
+* [Real-time Policy Monitoring for Large-scale Distributed Systems](/assets/pdf/master-thesis-proposals/online-policy-monitoring-proposal.pdf)
 
 * [Differential Durability: fault-tolerant distributed differential computation](/assets/pdf/master-thesis-proposals/differential-durability-proposal.pdf)
 
