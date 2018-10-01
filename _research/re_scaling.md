@@ -12,4 +12,4 @@ We are studying the aspect of automatically provisioning resources for stateful 
 
 Moritz Hoffmann, Frank McSherry, Andrea Lattuada. [Latency-conscious dataflow reconfiguration](/assets/pdf/beyondmr18-hoffmann.pdf). **BeyondMR**, 2018
 
-Vasiliki Kalavri, John Liagouris, Moritz Hoffmann, Desislava Dimitrova, Matthew Forshaw, Timothy Roscoe. [Three steps is all you need: fast, accurate, automatic scaling decisions for distributed streaming dataflows](/assets/pdf/osdi18-ds2.pdf) **OSDI**, 2018.
+Vasiliki Kalavri, John Liagouris, Moritz Hoffmann, Desislava Dimitrova, Matthew Forshaw, Timothy Roscoe. [Three steps is all you need: fast, accurate, automatic scaling decisions for distributed streaming dataflows](/assets/pdf/osdi18-ds2.pdf). **OSDI**, 2018.

@@ -14,6 +14,6 @@ We developed a routing module by leveraging a novel design approach. In particul
 
 ## Additional Material
 
-Desislava Dimitrova, John Liagouris, Sebastian Wicki, Moritz Hoffmann, Vasiliki Kalavri, Timothy Roscoe. [DeltaPath: Dataflow-based High-performance Incremental Routing](https://arxiv.org/abs/1808.06893), arXiv preprint, ArXiv:1808.06893, August 2018. 
+Desislava Dimitrova, John Liagouris, Sebastian Wicki, Moritz Hoffmann, Vasiliki Kalavri, Timothy Roscoe. [DeltaPath: Dataflow-based High-performance Incremental Routing](https://arxiv.org/abs/1808.06893). arXiv preprint, ArXiv:1808.06893, August 2018. 
 
 Christian Stücklberger. [Expressing the Routing Logic of a SDN Controller as a Differential Dataflow](/assets/pdf/sdn_thesis.pdf). **Master Thesis**. Systems Group, Department of Computer Science, ETH Zürich, September 2016.
