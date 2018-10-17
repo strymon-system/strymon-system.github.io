@@ -30,6 +30,8 @@ category: Publications
 
 ## Posters
 
+* Vasiliki Kalavri, John Liagouris, Moritz Hoffmann, Desislava Dimitrova, Matthew Forshaw, Timothy Roscoe. [Three steps is all you need: fast, accurate, automatic scaling decisions for distributed streaming dataflows](/assets/pdf/ds2-poster-osdi.pdf). **OSDI**, 2018.
+
 * Ralf Sager, John Liagouris, Desislava Dimitrova, Andrea Lattuada, Vasiliki Kalavri, Zaheer Chothia, Moritz Hoffmann, Timothy Roscoe. [SnailTrail: Online Bottleneck Detection for your Dataflow](https://eurosys2017.github.io/assets/data/posters/poster13-Sager.pdf). **EuroSys**, 2017. 
 
 * Andrea Lattuada, Vasiliki Kalavri, Moritz Hoffmann, Frank McSherry. [Differential durability: Fault-tolerant Distributed Differential Computation](https://eurosys2017.github.io/assets/data/posters/poster21-Lattuada.pdf). **EuroSys**, 2017. 
