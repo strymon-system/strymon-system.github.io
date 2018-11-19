@@ -20,6 +20,8 @@ category: Publications
 
 ## Theses
 
+* Fabian Fischer. [Snailtrail for latency-sensitive workloads](/assets/pdf/fischerf-heron.pdf). **Bachelor Thesis**. Systems Group, Department of Computer Science, ETH Zürich, September 2018.
+
 * Sebastian Wicki. [An Online Stream Processor for Timely Dataflow](http://systems.ethz.pubzone.org/servlet/Attachment?attachmentId=3923&versionId=3508856). **Master Thesis**. Systems Group, Department of Computer Science, ETH Zürich, November 2016.
 
 * Ralf Sager. [Real-Time Performance Analysis of a Modern Data-parallel Stream Processing Engine](/assets/pdf/timely_cpath_thesis.pdf). **Master Thesis**. Systems Group, Department of Computer Science, ETH Zürich, September 2016.
